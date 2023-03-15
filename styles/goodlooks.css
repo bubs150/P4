@@ -1,6 +1,8 @@
 body{
     background-color: bisque;
     font-family: "Bell MT", serif;
+    width: 100px;
+    height: 100px; 
 }
 nav{
     background-color: darkorange;
