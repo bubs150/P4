@@ -1,0 +1,120 @@
+/*DEVELOPER: Gabriel Bozza, IS117-004, Spring 2022*/
+
+body{
+    background-color: bisque;
+    font-family: "Bell MT", serif;
+    padding: 0 4%;
+}
+
+.fullwidth-row{
+    clear: both;
+}
+
+ul{
+    background-image: linear-gradient(to right,  bisque 0%, #FF8C00 1.5%, #FF8C00 98.5%, bisque 100%);
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+}
+.topnav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav input[type=text]{
+    float: right;
+    margin-top: 6px;
+    font-size: 17px;
+}
+
+li
+{
+    padding: 0 10px 0 10px;
+    float: left;
+}
+
+ul a{
+    font-size: 32px;
+}
+ul a:link { text-decoration: none; }
+ul a:visited { text-decoration: none; }
+ul a:hover { text-decoration: none; }
+ul a:active { text-decoration: none; }
+
+/*this for drop down menu*/
+
+.dropdown{
+    position: relative;
+}
+.dropdown_content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #FF8C00;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background-image: linear-gradient(to right, #FF8C00 0%, chocolate 5%, chocolate 95%, #FF8C00 100%);}
+
+.dropdown:hover .dropdown_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown_content a {
+    padding: 0 10px 0 10px;
+
+}
+/*for managing images*/
+#myImg{
+    transition: box-shadow, width, height 0.3s, 0.3s, 0.3s ease-in-out;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    width: 10%;
+    height: 10%;
+}
+
+#myImg:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+    width: 11%;
+    height: 11%;
+}
+
+#logo{
+    width: auto;
+    float: outside;
+    padding: 18px 0 8px;
+    display: inline-block;
+}
+
+#tagline{
+    float: right;
+    line-height: 55px;
+    font-size: larger;
+    font-weight: 600;
+    vertical-align: top;
+}
+
+/*this is for the text formatting*/
+.legal h4{
+    margin: 10px 0 10px 5px;
+}
+.legal h1{
+    margin: 0 0 10px 5px;
+}
+.legal p{
+    font-size: medium;
+}
+
+footer p {
+    text-align: center;
+    padding: 1em 0;
+    background-color: darkorange;
+    color: white;
+}
