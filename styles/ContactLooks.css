@@ -101,66 +101,41 @@ li a:hover, .dropdown:hover .dropbtn{
     font-weight: 600;
     vertical-align: top;
 }
-/*carousel css*/
-#myCarousel{
-    height: 590px;
-    overflow: hidden;
-}
-.item img{
-    height: auto;
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-}
 
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
-}
-
-/*css for articles*/
-.container{
-    text-align: center;
-    font-size: 0;
-}
-.post{
-    display: inline-block;
-    width: 30%;
-    border: 3px solid chocolate;
+/*this is for the submit element
+1st is the container class*/
+.contacter{
+    background-color: midnightblue;
+    border: 4px dotted yellow;
     border-radius: 4px;
-    padding: 2px;
-    margin: 20px 10px 20px 10px;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
+    position: center;
+    text-align: left;
+    max-width: 40%;
+    max-height: 30%;
+    margin: 30px auto 30px auto;
+    color: #dddddd;
+    font-size: large;
+    padding: 5px;
+ }
+
+/*2nd is the input and accompanying text*/
+.contacter input{
+    display: block;
+    vertical-align: text-top;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    color: black;
+    white-space: nowrap;
+
 }
 
-/*for popups*/
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+#comment{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
+    height: 200px;
 }
 
-.popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.popup-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.contacter div{
+    padding: 0px 0px 5px 0px;
 }
 
 footer p {

@@ -6,10 +6,6 @@ body{
     padding: 0 4%;
 }
 
-.fullwidth-row{
-    clear: both;
-}
-
 ul{
     background-image: linear-gradient(to right,  bisque 0%, #FF8C00 1.5%, #FF8C00 98.5%, bisque 100%);
     list-style-type: none;
@@ -101,67 +97,104 @@ li a:hover, .dropdown:hover .dropbtn{
     font-weight: 600;
     vertical-align: top;
 }
-/*carousel css*/
-#myCarousel{
-    height: 590px;
-    overflow: hidden;
-}
-.item img{
+/*for the layout of text
+1st is table of contents*/
+.tableOfContents{
     height: auto;
-    width: 80%;
+    width: 13%;
+    max-width: 20%;
+    text-align: left;
+    border: 2px solid darkorange;
+    margin: 10px 0px 0px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.tableOfContents a{
     display: block;
-    margin: 0 auto;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: larger;
+}
+/*2nd is for layout of actual text*/
+.openingFormat{
+    position: absolute;
+    margin: 10px 0px 0px 0px;
+    left: 20%;
+    max-width: 35%;
+}
+.characterDeets{
+    font-size: medium;
 }
 
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
+.imgShow {
+    position: relative;
+    margin: 5px 0px 0px 0px;
+    left: 70%;
 }
 
-/*css for articles*/
-.container{
-    text-align: center;
-    font-size: 0;
-}
-.post{
-    display: inline-block;
-    width: 30%;
-    border: 3px solid chocolate;
-    border-radius: 4px;
-    padding: 2px;
-    margin: 20px 10px 20px 10px;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
+.imgShow img{
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
-/*for popups*/
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+/*3rd is for Character data*/
+
+.chart {
+    overflow-x: auto;
+    margin-bottom: 45px;
+}
+
+table {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
+    border-collapse: collapse;
+    font-size: 12px;
 }
 
-.popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
+th{
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+}
+
+td{
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f5f5f5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e6e6e6;
+}
+
+td:first-child {
     text-align: center;
 }
 
-.popup-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+th:first-child, td:first-child {
+    background-color: #f5f5f5;
 }
+
+th:not(:first-child), td:not(:first-child) {
+    border-left: 1px solid #ddd;
+}
+
+th:last-child, td:last-child {
+    border-right: 1px solid #ddd;
+}
+
 
 footer p {
     text-align: center;

@@ -1,18 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- DEVELOPER: Gabriel Bozza, IS117-004, Spring 2023 -->
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Wake-up 236-P</title>
-    <link rel="stylesheet" href="styles/goodlooks.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/ChaDeetLooks.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav>
-    <h1>Character Data</h1>
-    <a href="https://bubs150.github.io/P4/">Home</a>|
-    <a href="">Trending Tech</a>|
-    <a href="">Trending Pros</a>|
-    <a href="">Contact Form</a>|
-</nav>
+    <div class='fullwidth-row'>
+        <div id='logo'>
+            <a href="index.html"><img id='myImg' src="pics/l.png" alt="Wake-Up 236P"/></a>
+            <div id='tagline'>
+                Wake-Up 236P Inc.
+            </div>
+        </div>
+    </div>
+    <div>
+        <ul class="topnav">
+        <!--use this later for link, for it to work on github pages, "https://bubs150.github.io/P4/ChaDeets.html"-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ChaDeets.html">Character Data</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Trending</a>
+                <div class="dropdown_content">
+                    <a href="TrendingPros.html">Trending Pros</a>
+                    <a href="TrendingTech.html">Trending Tech</a>
+                </div>
+            </li>
+            <li><a href="ContactPage.html">Contact Form</a></li>
+            <li><input type="text" placeholder="Search"></li>
+        </ul>
+    </div>
 
-</body>
+    <div class="tableHolder">
+        <div class="tableOfContents">
+                <a href="#adv">Advantages</a>
+                <a href="#disadv">Disadvantages</a>
+                <a href="#comments">Personal Thoughts</a>
+        </div>
+    </div>
+
+    <div class="openingFormat">
+        <div class="characterDeets">
+            <h2>Bedman?</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="imgShow">
+        <img src="pics/beddeets.jpg" height="280" width="360"/>
+        <img src="pics/bedfight.jpg" height="280" width="360"/>
+    </div>
+
+    <div class="chart">
+        <table>
+            <thead>
+            <tr>
+                <th>Move Name</th>
+                <th>Startup</th>
+                <th>Active</th>
+                <th>Recovery</th>
+                <th>On Block</th>
+                <th>On Hit</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>5P <img src="pics/bedpunch.jpg" height="150" width="230"/></td>
+                <td>5</td>
+                <td>2</td>
+                <td>8</td>
+                <td>-1</td>
+                <td>+5</td>
+            </tr>
+            <tr>
+                <td>2P <img src="pics/bedkick.jpg" height="150" width="230"/></td>
+                <td>6</td>
+                <td>3</td>
+                <td>11</td>
+                <td>-2</td>
+                <td>+3</td>
+            </tr>
+            <tr>
+                <td>j.P<img src="pics/bedface.jpg" height="150" width="230"/></td>
+                <td>6</td>
+                <td>Until Landing</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="characterDeets">
+        <h3 id="adv">Advantages</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. <br>He's got the big slammer hand. That's cool.
+        </p>
+        <img src="pics/bedlift.jpg" height="300" width="450"/>
+        <img src="pics/beddrop.jpg" height="300" width="450"/>
+    </div>
+
+    <div class="characterDeets">
+        <h3 id="disadv">Disadvantages</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
+        <img src="pics/bednofriends.jpg" height="400" width="520" alt="this move will ruin friendships"/>
+    </div>
+
+    <div class="characterDeets">
+        <h3 id="comments">Personal Thoughts</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
+    </div>
+    <footer>
+        <p id="copyright">&copy; 2023, Gabriel Bozza, Newark, NJ</p>
+    </footer>
+    </body>
 </html>
